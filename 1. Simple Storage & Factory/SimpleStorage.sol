@@ -13,14 +13,14 @@ contract SimpleStorage {
     // Person public pat = Person({favoriteNumber: 5, name: "Pat"});
     Person[] public listOfPeople;
 
-    mapping (string => uint256) public nameToFavoriteNumber;
+    mapping(string => uint256) public nameToFavoriteNumber;
 
     function store(uint _favoriteNumber) public virtual {
         myFavoriteNumber = _favoriteNumber;
     }
 
     // view, pure
-    function retrieve() public view returns(uint256) {
+    function retrieve() public view returns (uint256) {
         return myFavoriteNumber;
     }
 
